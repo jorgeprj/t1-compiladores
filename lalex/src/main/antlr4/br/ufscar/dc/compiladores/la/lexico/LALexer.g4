@@ -69,3 +69,6 @@ CADEIA_NAO_FECHADA: '"' ~('\n'|'"')* '\n';
 
 // Simbolos não reconhecidos na linguagem
 ERRO: '~' | '$' | '}';
+
+// Esta regra instrui o ANTLR a ignorar os caracteres de retorno de carro (\r) sempre que eles forem encontrados na entrada.
+RETURN: '\r' -> skip;
