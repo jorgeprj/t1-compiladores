@@ -29,6 +29,20 @@ Antes de compilar e executar o analisador léxico, verifique se o seguinte softw
 
 
 ## Como executar o Analisador Léxico
+
+### Dependências utilizadas
+- Antlr = 4.12.0
+- jUnit = 4.11
+- maven-clean-plugin = 3.1.0
+- maven-resources-plugin = 3.0.2
+- maven-compiler-plugin = 3.8.0
+- maven-surefire-plugin = 2.22.1
+- maven-jar-plugin = 3.0.2
+- maven-install-plugin = 2.5.2
+- maven-deploy-plugin = 2.8.2
+- maven-site-plugin = 3.7.1
+- maven-project-info-reports-plugin = 3.0.0
+  
 ### Compilação com Maven
 Siga estas etapas para compilar o analisador léxico usando Maven:
 
@@ -61,3 +75,10 @@ java -jar target/lalex-1.0-SNAPSHOT-jar-with-dependencies.jar caminho_entrada ca
 
 
 Substitua ``target/lalex-1.0-SNAPSHOT-jar-with-dependencies.jar`` pelo caminho correto do arquivo JAR gerado pelo Maven.
+
+## Testes
+Foi upado 37 arquivos para teste. Para a veririficação basta escolher qual teste deseja realizar (1.txt até 37.txt). Para isso basta compilar e empacotar o código e executar esse comando:
+
+```
+java -jar target/lalex-1.0-SNAPSHOT-jar-with-dependencies.jar test-cases/entrada/$i.txt test-cases/saida/$i.txt
+```
