@@ -66,7 +66,7 @@ Após empacotar o projeto, você pode executar o analisador léxico para um par 
 seguinte comando:
     
 ```
-java -jar target/lalex-1.0-SNAPSHOT-jar-with-dependencies.jar caminho_entrada caminho_saida
+java -jar target/novo-la-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar caminho_entrada caminho_saida
 ```
     
 - ``caminho_entrada``: Caminho completo do arquivo contendo o programa-fonte em linguagem LA.
@@ -74,11 +74,11 @@ java -jar target/lalex-1.0-SNAPSHOT-jar-with-dependencies.jar caminho_entrada ca
 - ``caminho_saída``: Caminho completo do arquivo onde a saída será salva.
 
 
-Substitua ``target/lalex-1.0-SNAPSHOT-jar-with-dependencies.jar`` pelo caminho correto do arquivo JAR gerado pelo Maven.
+Substitua ``target/novo-la-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar`` pelo caminho correto do arquivo JAR gerado pelo Maven.
 
 ## Testes
 Foi upado 37 arquivos para teste. Para a veririficação basta escolher qual teste deseja realizar (1.txt até 37.txt). Para isso basta compilar e empacotar o código e executar esse comando:
 
 ```
-java -jar target/lalex-1.0-SNAPSHOT-jar-with-dependencies.jar test-cases/entrada/$i.txt test-cases/saida/$i.txt
+java -jar target/novo-la-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar test-cases/entrada/$i.txt test-cases/saida/$i.txt
 ```
